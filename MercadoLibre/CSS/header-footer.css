@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/* Header  elegi otro amarillo que hace que no haya difereencia con el logo*/
+
+header {
+    background-color: #fee600;
+    color: black;
+    padding-bottom: 10px;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    ul {
+        padding: 10px 0;
+        list-style: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-img {
+        padding-top: 25px;
+    }
+
+    .barra-de-busqueda-con-icono {
+        padding-top: 40px;
+        display: flex;
+        padding-right: 30px;
+    }
+}
+
+header .icon {
+    width: 25px;
+}
+
+header .logo {
+    width: 200px;
+    margin-left: 50px;
+}
+
+header .barra-de-busqueda {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+header .icono-busqueda button {
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: grey;
+
+    :hover {
+        color: black;
+    }
+}
+
+header .icono-busqueda {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: 20px;
+    top: 1px;
+}
+
+header .compra-en-cuotas {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/*menu*/
+header .burger-menu {
+    background-color: #1259c3;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.burger-menu i {
+    color: white;
+    font-size: 16px;
+}
+
+@media (min-width: 769px) {
+    header {
+        .header-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .burger-menu {
+            display: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                display: flex;
+
+                a {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .icono-busqueda {
+            display: inline-block;
+            vertical-align: middle;
+            position: inherit;
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+
+        .barra-de-busqueda-con-icono {
+            label {
+                button {
+                    border: solid;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 25px;
+}
+
+footer .section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+footer .article-footer {
+    max-width: 300px;
+    margin: 10px;
+}
+
+footer i {
+    font-size: 30px;
+    color: #1259c3;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+}
