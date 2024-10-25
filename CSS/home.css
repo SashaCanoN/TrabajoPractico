@@ -1,0 +1,105 @@
+
+main {
+    background-color: #ebebeb;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+.articulos-main {
+    margin: 25px auto;
+    padding: 25px 25px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    .descripciones {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+        text-align: left;
+        font-weight: bold;
+        border-top: 2px solid #ebebeb;
+        .parrafos {
+            max-width: 100%;
+            display: flex;
+        }
+
+        .descripcion {
+            display: none;
+        }
+
+        &:hover .descripcion {
+            display: block;
+        }
+    }
+}
+
+.fa-truck-fast{
+    color: #39b54a;
+    border: solid #39b54a;
+    padding: 8px 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.articulos-main img {
+    width: 100%;
+}
+
+.articulos-main p {
+    padding: 15px;
+    background-color: white;
+}
+
+.img-banner img {
+    width: 100%;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+@media (min-width: 769px) {
+    main {
+        text-align: left;
+    }
+
+    .articulos-general {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .articulos-main {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articulos-main {
+        width: calc(25% - 20px);
+    }
+}
